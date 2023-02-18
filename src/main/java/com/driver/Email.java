@@ -33,14 +33,17 @@ public class Email {
                     newPassword.matches(".*[0-9].*") &&
                     newPassword.matches(".*[^A-Za-z0-9].*")) {
                 this.password = newPassword;
-                System.out.println("Password has been changed successfully.");
+                //System.out.println("Password has been changed successfully.");
             }
             else {
-                System.out.println("Invalid new password.");
+                return;
+                //System.out.println("Invalid new password.");
             }
         }
         else {
-            System.out.println("Incorrect old password.");
+
+            return;
+            //System.out.println("Incorrect old password.");
         }
     }
 }
